@@ -87,6 +87,7 @@ for txt in txts:
         particionado.append(itens)
 
     n = n + 1
+    os.makedirs('./novos')
     novoTexto = open('./novos/'+particionado[6].group()+'_'+particionado[4].group()+'_00'+str(n)+'.txt', 'w+', encoding='utf-8')
     original.seek(0)
     texto = original.read()
